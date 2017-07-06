@@ -117,7 +117,7 @@ Note that the default scope used is `openid`
 
 ### Passwordless login
 
-Logging in with a Passwordless is slightly different. Passwordless can be done via email or via SMS, and either by sending the user a code, or sending them a link which contains a code. All of these methods of Passwordless authentication will require two steps - requesting the code, and then inputting the code for verification. Note that Passwordless authentication *cannot be used* with the [OIDC Conformant Mode](/oidc-conformant-mode) enabled.
+Logging in with a Passwordless is slightly different. Passwordless can be done via email or via SMS, and either by sending the user a code, or sending them a link which contains a code. All of these methods of Passwordless authentication will require two steps - requesting the code, and then inputting the code for verification. Note that Passwordless authentication *cannot be used* with the [OIDC Conformant Mode](#oidc-conformant-mode) enabled.
 
 **Step 1:** Request the code
 
@@ -375,7 +375,7 @@ public class MyActivity extends Activity {
 
 ```
 
-Finally create an `Auth0` instance to hold your client information as you've seen previously [here](/initializing-auth0). Remember that it's encouraged to turn on the [OIDC Conformant Mode](/oidc-conformant-mode):
+Finally create an `Auth0` instance to hold your client information as you've seen previously [here](/initializing-auth0). Remember that it's encouraged to turn on the [OIDC Conformant Mode](#oidc-conformant-mode):
 
 ```java
 Auth0 account = new Auth0("{YOUR_CLIENT_ID}", "{YOUR_DOMAIN}");
